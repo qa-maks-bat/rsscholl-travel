@@ -879,9 +879,9 @@ p {
 }
 
 .steps-container {
+    position: relative;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    align-items:center;
 }
 
 .steps-box {
@@ -892,11 +892,13 @@ p {
 }
 
 .box-bike {
-    width: 246.25px;
+    width: 246.25px;  
+    margin-right: 232px;  
 }
 
 .box-calendar {
     width: 221.94px;
+    margin-right: 160px;  
 }
 
 .box-plane {
@@ -912,14 +914,14 @@ p {
     position: absolute;
     width: 50px;
     height: 45px;
-    top: 81px;
+    top: 28px;
     margin-top: inherit;
 }
 
 .box-icon-calendar {
     position: absolute;
     width: 52px;
-    top: 77px;
+    top: 24px;
     margin-top: inherit;
 }
 
@@ -927,7 +929,7 @@ p {
     position: absolute;
     width: 60px;
     height: 45px;
-    top: 80px;
+    top: 28px;
     margin-top: inherit;
 }
 
@@ -997,6 +999,7 @@ p {
     display: flex;
     justify-content: space-around;
     margin-top: 46px;
+    gap: 60px;
 }
 
 .destinations-box {

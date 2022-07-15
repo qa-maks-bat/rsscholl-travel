@@ -4,10 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" href="./images/favicons/travel_portal_favicon_30x30.svg" />
     <title>Travel Project | Maksim Batrakou</title>
@@ -23,7 +20,7 @@
     />
   </head>
 
-  <body class="body">
+  <body class="body mask-content">
     <div class="container">
       <img
         class="container container-background-top-image"
@@ -37,6 +34,9 @@
         alt="Image of a boat on the lake"
       />
 
+      <div class="container-background-top-image-mobile"></div>
+
+      <div class="container-background-bottom-image-mobile"></div>
       <div class="container container-background-overbottom-image"></div>
 
       <header class="header-block">
@@ -50,6 +50,44 @@
           <span class="logo-title">Travel Portal</span>
         </div>
 
+        <!-- burger menu for mobile mode -->
+        <div class="burger-menu">
+          <input class="toggler" type="checkbox" id="toggler" />
+
+          <div class="burger-lines">
+            <div class="line"></div>
+          </div>
+
+          <div class="menu">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a class="menu-link" href="#preview">How It Works</a>
+              </li>
+
+              <li class="menu-item">
+                <a class="menu-link" href="#steps">Plan Your Trip</a>
+              </li>
+
+              <li class="menu-item">
+                <a class="menu-link" href="#destinations">Destinations</a>
+              </li>
+
+              <li class="menu-item">
+                <a class="menu-link" href="#stories">Travel Stories</a>
+              </li>
+
+              <li class="menu-item">
+                <a class="menu-link" href="#account">Account</a>
+              </li>
+
+              <li class="menu-item">
+                <a class="menu-link" href="#social-media">Social Media</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- nav for desktop mode -->
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
@@ -278,35 +316,58 @@
           <h2 class="section-title destinations-title">Popular destinations</h2>
 
           <div class="destinations-container">
-            <div class="destinations-box">
-              <img
-                class="box-image image-spain"
-                src="./images/content/destinations/spain_destinations_800x800.jpg"
-                alt="Image of Spain"
-                id="image-spain"
-              />
+            <div class="destinations-box box-spain">
+              <div class="box-image box-image-spain">
+                <img
+                  class="box-image image-spain"
+                  src="./images/content/destinations/spain_destinations_800x800.jpg"
+                  alt="Image of Spain"
+                  id="image-spain"
+                />
+              </div>
 
               <span class="box-title title-spain">Spain</span>
             </div>
 
-            <div class="destinations-box">
-              <img
-                class="box-image image-japan"
-                src="./images/content/destinations/japan_destinations_800x800.jpg"
-                alt="Image of Japan"
-              />
+            <div class="destinations-box box-japan">
+              <div class="box-image box-image-japan">
+                <img
+                  class="box-image image-japan"
+                  src="./images/content/destinations/japan_destinations_800x800.jpg"
+                  alt="Image of Japan"
+                />
+              </div>
 
               <span class="box-title title-japan">Japan</span>
             </div>
 
-            <div class="destinations-box">
-              <img
-                class="box-image image-usa"
-                src="./images/content/destinations/usa_destinations_800x800.jpg"
-                alt="Image of the USA"
-              />
+            <div class="destinations-box box-usa">
+              <div class="box-image box-image-usa">
+                <img
+                  class="box-image image-usa"
+                  src="./images/content/destinations/usa_destinations_800x800.jpg"
+                  alt="Image of the USA"
+                />
+              </div>
 
               <span class="box-title title-usa">USA</span>
+            </div>
+          </div>
+
+          <div class="arrows-box">
+            <div class="arrow-left-box">
+              <img
+                class="arrow-left"
+                src="./images/buttons/arrow_left_destinations_14.36x24.94.svg"
+                alt="Icon of Arrow Left Navigation"
+              />
+            </div>
+            <div class="arrow-right-box">
+              <img
+                class="arrow-right"
+                src="./images/buttons/arrow_right_destinations_14.36x24.94.svg"
+                alt="Icon of Arrow Right Navigation"
+              />
             </div>
           </div>
 
@@ -365,6 +426,7 @@
                 alt="Image of Thailand"
               />
             </div>
+
             <div class="grid-article-thailand">
               <h3 class="stories-article-header">
                 10 Photos of Attractive Thailand
@@ -380,17 +442,19 @@
                 sunt in culpa qui officia deserunt mollit anim id est
                 laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit...
-                <a class="stories-article-link" href="#"> Read More </a>
               </p>
+
+              <a class="stories-article-link" href="#"> Read More </a>
             </div>
 
             <div class="grid-image-canyonlands">
               <img
                 class="stories-image"
-                src="./images/content/stories/canuonlands_stories_400x250.jpg"
+                src="./images/content/stories/canyonlands_stories_400x250.jpg"
                 alt="Image of Thailand"
               />
             </div>
+
             <div class="grid-article-canyonlands">
               <h3 class="stories-article-header">
                 Canyonlands National Park, Utah
@@ -406,8 +470,9 @@
                 sunt in culpa qui officia deserunt mollit anim id est
                 laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit...
-                <a class="stories-article-link" href="#"> Read More </a>
               </p>
+
+              <a class="stories-article-link" href="#"> Read More </a>
             </div>
 
             <div class="grid-image-mountains">
@@ -417,6 +482,7 @@
                 alt="Image of Thailand"
               />
             </div>
+
             <div class="grid-article-mountains">
               <h3 class="stories-article-header">
                 I left my heart in the Mountains!
@@ -432,8 +498,9 @@
                 sunt in culpa qui officia deserunt mollit anim id est
                 laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit...
-                <a class="stories-article-link" href="#"> Read More </a>
               </p>
+
+              <a class="stories-article-link" href="#"> Read More </a>
             </div>
 
             <div class="grid-image-journey">
@@ -443,6 +510,7 @@
                 alt="Image of Thailand"
               />
             </div>
+
             <div class="grid-article-journey">
               <h3 class="stories-article-header">
                 The Longest journey in my life!
@@ -458,8 +526,9 @@
                 sunt in culpa qui officia deserunt mollit anim id est
                 laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit...
-                <a class="stories-article-link" href="#"> Read More </a>
               </p>
+
+              <a class="stories-article-link" href="#"> Read More </a>
             </div>
           </div>
 
@@ -476,53 +545,77 @@
         </section>
       </main>
 
-      <footer class="footer-block">
+      <footer class="footer-block" id="social-media">
         <div class="footer-grid-box">
           <div class="grid-item-github">
-            <img
-              class="footer-icon icon-github"
-              src="./images/icons/footer/github_icon_footer_white.svg"
-              alt="Image of GitHub Logo"
-            />
             <a
               class="footer-link link-github"
               href="https://github.com/qa-maks-bat"
               target="_blank"
+              rel="noopener"
             >
-              Visit my GitHub
+              <img
+                class="footer-icon icon-github"
+                src="./images/icons/footer/github_icon_footer_white.svg"
+                alt="Image of GitHub Logo"
+              />
+
+              <span class="text-github">Visit my GitHub</span>
             </a>
           </div>
 
           <div class="grid-item-text-center">
-            <p class="footer-text">2022</p>
-
             <p class="footer-text">All Rights Reserved © Travel Portal</p>
           </div>
 
           <div class="grid-item-social-media">
             <ul class="social-media-list">
               <li class="social-media-item">
-                <img
-                  class="footer-icon"
-                  src="./images/icons/footer/instagram_icon_footer_34x34.svg"
-                  alt="Image of Instagram Icon"
-                />
+                <a
+                  class="footer-link link-instagram"
+                  href="https://www.instagram.com/rsschool_news/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Follow us in Instagram"
+                >
+                  <img
+                    class="footer-icon"
+                    src="./images/icons/footer/instagram_icon_footer_34x34.svg"
+                    alt="Image of Instagram Icon"
+                  />
+                </a>
               </li>
 
               <li class="social-media-item">
-                <img
-                  class="footer-icon"
-                  src="./images/icons/footer/youtube_icon_footer_34x34.svg"
-                  alt="Image of YouTube Icon"
-                />
+                <a
+                  class="footer-link link-youtube"
+                  href="https://www.youtube.com/c/RollingScopesSchool"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Watch our videos on YouTube"
+                >
+                  <img
+                    class="footer-icon"
+                    src="./images/icons/footer/youtube_icon_footer_34x34.svg"
+                    alt="Image of YouTube Icon"
+                  />
+                </a>
               </li>
 
               <li class="social-media-item">
-                <img
-                  class="footer-icon"
-                  src="./images/icons/footer/twitter_icon_footer_34x34.svg"
-                  alt="Image of Twitter Icon"
-                />
+                <a
+                  class="footer-link link-twitter"
+                  href="https://twitter.com/rollingscopes"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Read more about us in Twitter"
+                >
+                  <img
+                    class="footer-icon"
+                    src="./images/icons/footer/twitter_icon_footer_34x34.svg"
+                    alt="Image of Twitter Icon"
+                  />
+                </a>
               </li>
             </ul>
           </div>
@@ -532,6 +625,8 @@
               class="footer-link link-rss"
               href="https://rs.school/js-stage0/"
               target="_blank"
+              rel="noopener"
+              aria-label="Read about us on our Website"
             >
               <img
                 class="footer-icon icon-rss"
